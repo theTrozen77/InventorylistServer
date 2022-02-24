@@ -11,7 +11,7 @@ const fetchProductById = async (req, res) => {
 };
 
 const createProduct = async (req, res) => {
-  console.log("requset file", req.file);
+  console.log("requset file", req);
   var NewProduct = new Product({});
   NewProduct.productName = req.body.productName;
   NewProduct.productCost = req.body.productCost;
